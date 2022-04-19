@@ -5,7 +5,7 @@ function abcdefghijklmnop(){
 }
 
 const alphabet = abcdefghijklmnop 
-/* There is no parentheses as it is to refer to the function itself not the value it invokes */
+/* There are no parentheses as it is to refer to the function itself not the value it invokes */
 
 //To call the function, do as below//
 
@@ -21,12 +21,12 @@ function makeSubarray(arr, select){
 
 /* Higher-Order-Function 
 the parameter 'arr' gets an array and 'select' gets a function.
-.filter() is method to filter the elements in an array based on the condition stated in the function in parenteses, in this case, function coming in 'select' parameter. */
+.filter() is a method to filter the elements in an array based on the condition stated in the function in parentheses, in this case, function coming in 'select' parameter. */
 
 
 let isEven = n => n % 2 === 0;
 
-/* Callback fucntion in arrow function. As the function has name, it needs to be declared as a variable. This function tells whether the parameter 'n' is even/odd number returning truth/false based on the condition */
+/* Callback fucntion in arrow function. As the function has a name, it needs to be declared as a variable. This function tells whether the parameter 'n' is an even/odd number returning truth/false based on the condition */
 
 let array = [0,1,2,3,4,5];
 
@@ -35,7 +35,7 @@ console.log(makeSubarray(array, isEven)); //-> [0,2,4]
 
 /*  -> makeSubarray(array, isEven) returns 'array.filter(isEven)'
 
-The numbers in 'array' goes through 'isEven' function to be filtered then the numbers which are true to the condition returns, thus 0, 2, 4.
+The elements in 'array' go through 'isEven' function to be filtered then the elements which are true to the condition return, thus 0, 2, 4.
 
 */
 
@@ -54,13 +54,13 @@ const each = a.forEach(i => {
 const map = a.map(i2 => i2 * i2);
 console.log(map);
 
-/* .map returns new array after executing the function, in this case i2 * i2. Every element come back in to the array, only the element's values change */
+/* .map returns new array after executing the function, in this case i2 * i2. Every element come back into the array, only the element's values change */
 
 
 const filter = a.filter(i3 => i3 % 2 === 0);
 console.log(filter);
 
-/* .filter returns filtered elements to the array. Elements go through parameter 'i3' and if the condition meeets, it comes back to the array. Not all elements come back in to the array and the value does not chage. */
+/* .filter returns filtered elements to the array. Elements go through parameter 'i3' and if they meet the condition, they come back into the array. Not all elements do and the values do not chage. */
 
 
 /* I tried .forEach() method to substitute .map() and .filter() method but it only returned 'undefined'.
@@ -74,12 +74,12 @@ console.log(`${i} is my favorite number.`);
 });
 
 
-I tried .filter() method instead of .map() and the full array came back without any change
+I tried .filter() method instead of .map() and all the elements in the array came back without any change.
 -> const map2 = a.filter(i2 => i2 * i2);
 console.log(map2);
 
 
-I tried .map() method instead of .filter() and the elements came back as boolean in the array.
+I tried .map() method instead of .filter() and all the elements came back as boolean in the array.
 -> const filter2 = a.map(i3 => i3 % 2 === 0);
 console.log(filter2);
 
