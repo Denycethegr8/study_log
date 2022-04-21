@@ -38,7 +38,7 @@ let dog = {
 
 dog.comment();
 
-/* the comment property becomes a method. It can omit 'fuction' between parantheses and curly braces */
+/* the comment property becomes a method. It can omit ': function' in front of parantheses. comment: function () -> comment () */
 
 
 // 3. Nested objects
