@@ -1,0 +1,28 @@
+#div1 {
+    background-color: aqua;
+    width: 200px;
+    height: 300px;
+    position:relative;
+    margin-bottom:20px;
+}
+
+#div2 {
+    background-color: blueviolet;
+    width:70%;
+    height: 60%;
+    margin: auto;
+}
+
+#div3 {
+    background-color:coral;
+    width: 200px;
+    height: 300px;
+    position: relative;
+}
+
+#div4 {
+    background-color:lightgreen;
+    width:70%;
+    height: 60%;
+    margin: auto;
+}
