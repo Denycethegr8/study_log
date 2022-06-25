@@ -1,0 +1,27 @@
+header {
+    height:50px;
+    font-size: 30px;
+    background-color: skyblue;
+}
+
+#items-div{
+    padding-top:20px;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    border: 1px black solid;
+    width: 100px;
+    ;
+}
+
+#box {
+    width:400px;
+    height: 200px;
+    margin-top: 20px;
+    background-color:chocolate;
+}
